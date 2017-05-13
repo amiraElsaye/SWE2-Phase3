@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html ng-app="app" >
+<head>
+  <meta charset="UTF-8"> </meta>
+  <title>Knowledge Plus </title>
+
+  <link th:href="@{/css/style.css}" href="/css/style.css"  rel="stylesheet" type="text/css"  />
+   <!--  <link th:href="@{/css/style2.css}" href="/css/style.css"  rel="stylesheet" type="text/css"  />-->
+  
+<!--  
+   <link rel="stylesheet" href="style.css"> 
+
+   <link rel="stylesheet" href="style.css">
+-->
+
+<style >input.ng-invalid{border:1px solid red;}</style>
+  
+</head>
+
+<body>
+
+ <div ng-controller="mycontroller as controller">
+  <div class="login">
+  <header class="header">
+    <span class="text">LOGIN</span>
+    <span class="loader"></span>
+    
+  </header>
+
+
+  <form class="form" name="frm" ng-submit="controller.checkData()" >  
+    <input ng-model="controller.name" class="input" type="text" placeholder="Username"  />
+    <input ng-model="controller.password" class="input" type="password" placeholder="Password"  />
+    <button ng-disabled="frm.$invalid" class="btn" type="submit" ></button>
+  </form>
+</div>
+<button class ="resetbtn" type="reset">Reset it</button>
+
+
+    
+</div>
+</body>
+</html>

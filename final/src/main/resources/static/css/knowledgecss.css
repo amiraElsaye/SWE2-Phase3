@@ -1,0 +1,87 @@
+body{
+	font-family: arial , sans-serif ;
+	text-align: center;
+}
+*{
+	padding: 0px;
+	margin: 0px ;
+}
+#dive1{
+	width: 100%;
+	height: 850px;
+	background: url(yup.jpg);
+    
+}
+#dive2{
+	background: #58980e ;
+	height: 100px;
+	width: 100%;
+	line-height: 100px;
+	opacity: 0.8 ;
+	filter: alpha (opacity=80);
+}
+#dive2 h1{
+	float: left;
+	font-weight : 400;
+	color: white;
+	cursor: pointer;
+	margin-left: 20px;
+
+}
+/*
+#menue
+{
+	overflow: scroll;
+}*/
+#dive2 ul{
+	float: right;
+	position: relative;
+	margin-right: 100px;
+	line-height: 60px;
+
+}
+#dive2 ul li{
+	list-style-type: none;
+	display: inline-block;
+}
+#dive2 ul li a{
+	padding: 22px;
+	text-decoration: none;
+	color: white;
+	display: block;
+}
+#dive2 ul li:hover{
+	background: #8bc34a ;
+	transition: all 0.40s;
+}
+#nav_wrapper{
+	width: 100%;
+	margin: 0 auto ;
+	text-align: center;
+}
+#dive2 ul li :hover ul{
+	display: block;
+
+}
+#dive2 ul ul {
+	display :none ;
+	width: 120px;
+	position: absolute;
+}
+
+#dive2 ul li li{
+	background: #8bc34a ;
+	display: block;
+
+}
+#dive2 ul li li a{
+	padding: 20px;
+}
+#dive2 ul li li:hover{
+	background: #8bc34a;
+	transition: all 0.40s ;
+}
+.active{
+	background: #8bc34a ;
+	transition: all 0.40s ;
+}

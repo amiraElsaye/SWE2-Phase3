@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html ng-app="app">
+<head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.4/angular-csp.css"></link>
+<link th:href="@{/css/main.css}" href="/css/main.css"  rel="stylesheet" type="text/css"  />
+<!--  <style type="text/css">
+.bgimg{
+background-image:url(img/monsters-university-mike-wazowski-600x372.jpg);
+}
+</style>-->
+
+ <!--  <body class="bgimg">-->
+
+<!--  <li ng-repeat="user in userData">
+<img ng-src="{{user.img}}.jpg"></img>
+</li>-->
+
+<style>
+html{
+    background:url('img/monsters-university-mike-wazowski-600x372.jpg') no-repeat center center fixed;
+    -webkit-background-size:cover;
+    -moz-background-size:cover;
+    -o-background-size:cover;
+    background-size:cover; 
+}
+</style>
+</head>
+
+<body>
+ <div ng-controller="homeController">
+      <div id="header">
+        <div class="logo"><a href="#">Knowledge<span>Plus</span></a></div>
+        <input type="submit" value="Sign up" class="button signupButton"></input>
+           <input type="submit" value="Sign in" class="button signinButton" ng-click="redirect()"></input>
+           <!--  <button ng-click="redirect()">Sign in</button>-->
+           
+      </div>
+      
+</div>
+</body>
+
+<!--  <div class="modalContainer" 
+  ng-style="{'background-image': 'url(' + user.img + ')'}">-->
+  
+  <!--  <div back-img="C:\\Users\\Kareem\\Desktop\\monsters-university-mike-wazowski-600x372.jpg"></div>-->
+
+
+<!--  </body>-->
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html ng-app="app" >
+<head>
+  <meta charset="UTF-8"> </meta>
+  <title>Knowledge Plus </title>
+
+ <script  src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+ <script type="text/javascript" th:src="@{/js/app.js}"  ></script> 
+  <link th:href="@{/css/style.css}" href="/css/style.css"  rel="stylesheet" type="text/css"  />
+
+  
+</head>
+
+<body>
+
+ <div ng-controller="mycontroller as controller">
+  <div class="login">
+  <header class="header">
+    <span class="text">LOGIN</span>
+    <span class="loader"></span>
+  </header>
+
+
+  <form class="form" ng-submit="controller.checkData()" >  
+    <input ng-model="controller.name" class="input" type="text" placeholder="Username"  />
+    <input ng-model="controller.password" class="input" type="password" placeholder="Password"  />
+    <button class="btn" type="submit" ></button>
+  </form>
+  
+ 
+</div>
+
+<button class ="resetbtn" type="reset">Reset it</button>
+  
+</div>
+</body>
+</html>
